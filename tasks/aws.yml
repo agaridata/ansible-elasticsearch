@@ -41,6 +41,11 @@
     line="discovery.ec2.ping_timeout: {{ elasticsearch_plugin_aws_ec2_ping_timeout }}"
 - lineinfile: >
     dest="{{ elasticsearch_conf_dir }}/elasticsearch.yml"
+    regexp='^(cloud.aws.region.*)$'
+    insertafter='^(cloud.node.auto_attributes.*)$'
+    line="cloud.aws.region: '{{ elasticsearch_plugin_aws_region }}'"
+- lineinfile: >
+    dest="{{ elasticsearch_conf_dir }}/elasticsearch.yml"
     regexp='^(cloud.node.auto_attributes.*)$'
     insertafter='^(discovery.ec2.ping_timeout.*)$'
     line="cloud.node.auto_attributes: true"

@@ -17,3 +17,7 @@ elasticsearch_thread_pools:
   - "threadpool.bulk.type: fixed"
   - "threadpool.bulk.size: 50"
   - "threadpool.bulk.queue_size: 1000"
+elasticsearch_plugin_aws_ec2_groups: "elasticsearch"
+elasticsearch_plugin_aws_access_key: "AKIAJUCHHR467JWBYV7A"
+elasticsearch_plugin_aws_secret_key: "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"
+elasticsearch_plugin_aws_region: "us-west-2"
