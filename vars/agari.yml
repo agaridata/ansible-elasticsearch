@@ -1,11 +1,11 @@
 ---
 # Elasticsearch Ansible Sample Variables
 
-elasticsearch_version: 0.90.5
+elasticsearch_version: 1.4.1
 elasticsearch_heap_size: 1g
 elasticsearch_max_open_files: 65535
 elasticsearch_max_locked_memory: unlimited
-elasticsearch_timezone: "America/New_York"
+elasticsearch_timezone: "UTC"
 elasticsearch_cluster_name: elasticsearch-ansible
 elasticsearch_node_name: elasticsearch-ansible-node
 elasticsearch_node_max_local_storage_nodes: 1
@@ -15,10 +15,14 @@ elasticsearch_gateway_type: local
 elasticsearch_gateway_recover_after_nodes: 1
 elasticsearch_gateway_recover_after_time: 2m
 elasticsearch_gateway_expected_nodes: 1
-elasticsearch_discovery_zen_minimum_master_nodes: 1
+elasticsearch_discovery_zen_minimum_master_nodes: 4
 elasticsearch_discovery_zen_ping_timeout: 30s
 elasticsearch_discovery_zen_ping_multicast_enabled: "true"
 elasticsearch_misc_auto_create_index: "true"
 elasticsearch_misc_query_bool_max_clause_count: 4096
 elasticsearch_misc_disable_delete_all_indices: "true"
 elasticsearch_java_opts: "-XX:-UseSuperWord"
+elasticsearch_plugin_aws_ec2_groups: "elasticsearch"
+elasticsearch_plugin_aws_access_key: "AKIAJUCHHR467JWBYV7A"
+elasticsearch_plugin_aws_secret_key: "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"
+elasticsearch_plugin_aws_region: "us-west-2"
