@@ -23,6 +23,4 @@ elasticsearch_misc_query_bool_max_clause_count: 4096
 elasticsearch_misc_disable_delete_all_indices: "true"
 elasticsearch_java_opts: "-XX:-UseSuperWord"
 elasticsearch_plugin_aws_ec2_groups: "elasticsearch"
-elasticsearch_plugin_aws_access_key: "AKIAJUCHHR467JWBYV7A"
-elasticsearch_plugin_aws_secret_key: "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"
 elasticsearch_plugin_aws_region: "us-west-2"
