@@ -1,3 +1,5 @@
+vars/keys.yml
+
 # Numerous always-ignore extensions
 *.diff
 *.err
