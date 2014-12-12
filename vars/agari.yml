@@ -9,7 +9,7 @@ elasticsearch_timezone: "UTC"
 elasticsearch_conf_dir: "/etc/elasticsearch"
 elasticsearch_data_dir: "/elasticsearch/data.0,/elasticsearch/data.1"
 elasticsearch_log_dir: "/var/log/elasticsearch"
-elasticsearch_cluster_name: elasticsearch
+elasticsearch_cluster_name: "elasticsearch"
 elasticsearch_node_max_local_storage_nodes: 1
 elasticsearch_index_mapper_dynamic: "true"
 elasticsearch_memory_bootstrap_mlockall: "true"
@@ -20,7 +20,7 @@ elasticsearch_gateway_recover_after_time: 3m
 elasticsearch_gateway_expected_nodes: 6
 elasticsearch_discovery_zen_minimum_master_nodes: 4
 elasticsearch_discovery_zen_ping_timeout: 30s
-elasticsearch_discovery_zen_ping_multicast_enabled: "true"
+elasticsearch_discovery_zen_ping_multicast_enabled: "false"
 elasticsearch_misc_auto_create_index: ".marvel-*"
 elasticsearch_misc_query_bool_max_clause_count: 4096
 elasticsearch_misc_disable_delete_all_indices: "true"
