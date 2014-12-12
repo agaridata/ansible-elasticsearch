@@ -13,9 +13,13 @@
 # - elasticsearch_plugin_aws_secret_key
 
 
+- name: Removing AWS Plugin
+  action: >
+    shell bin/plugin --remove elasticsearch/elasticsearch-cloud-aws/{{ elasticsearch_plugin_aws_version }}
+    chdir={{ elasticsearch_home_dir }}
 - name: Installing AWS Plugin
   action: >
-    shell bin/plugin -install elasticsearch/elasticsearch-cloud-aws/{{ elasticsearch_plugin_aws_version }}
+    shell bin/plugin --install elasticsearch/elasticsearch-cloud-aws/{{ elasticsearch_plugin_aws_version }}
     chdir={{ elasticsearch_home_dir }}
 # Fix permissions
 - file: >
