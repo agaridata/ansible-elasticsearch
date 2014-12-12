@@ -8,7 +8,7 @@ elasticsearch_max_locked_memory: unlimited
 elasticsearch_timezone: "UTC"
 elasticsearch_conf_dir: "/etc/elasticsearch"
 elasticsearch_data_dir: "/elasticsearch/data.0,/elasticsearch/data.1"
-elasticsearch_log_dir: "/usr/local/var/log/elasticsearch"
+elasticsearch_log_dir: "/var/log/elasticsearch"
 elasticsearch_cluster_name: elasticsearch
 elasticsearch_node_max_local_storage_nodes: 1
 elasticsearch_index_mapper_dynamic: "true"
