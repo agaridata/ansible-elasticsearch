@@ -31,3 +31,4 @@ elasticsearch_plugin_aws_version: 2.4.1
 elasticsearch_plugin_aws_ec2_ping_timeout: 30s
 elasticsearch_plugin_marvel_version: 1.2.1
 elasticsearch_plugin_marvel_agent_enabled: "true"
+elasticsearch_index_number_of_replicas: 2
