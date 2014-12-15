@@ -3,7 +3,7 @@
 
 elasticsearch_version: 1.4.1
 elasticsearch_heap_size: 8g
-elasticsearch_max_open_files: 65535
+elasticsearch_max_open_files: 131080
 elasticsearch_max_locked_memory: unlimited
 elasticsearch_timezone: "UTC"
 elasticsearch_conf_dir: "/etc/elasticsearch"
@@ -15,19 +15,14 @@ elasticsearch_index_mapper_dynamic: "true"
 elasticsearch_memory_bootstrap_mlockall: "true"
 elasticsearch_network_http_port: 9200
 elasticsearch_network_http_enabled: "true"
-elasticsearch_gateway_recover_after_nodes: 5
-elasticsearch_gateway_recover_after_time: 3m
 elasticsearch_gateway_expected_nodes: 6
-elasticsearch_discovery_zen_minimum_master_nodes: 4
-elasticsearch_discovery_zen_ping_timeout: 30s
+elasticsearch_discovery_zen_minimum_master_nodes: 1
+elasticsearch_discovery_zen_ping_timeout: 5s
 elasticsearch_discovery_zen_ping_multicast_enabled: "false"
-elasticsearch_misc_auto_create_index: ".marvel-*"
-elasticsearch_misc_query_bool_max_clause_count: 4096
+elasticsearch_misc_auto_create_index: "true"
 elasticsearch_misc_disable_delete_all_indices: "true"
-elasticsearch_java_opts: "-XX:-UseSuperWord"
-elasticsearch_plugin_aws_ec2_groups: "elasticsearch"
+elasticsearch_plugin_aws_ec2_groups: elasticsearch
 elasticsearch_plugin_aws_region: "us-west-2"
 elasticsearch_plugin_aws_version: 2.4.1
-elasticsearch_plugin_aws_ec2_ping_timeout: 30s
+elasticsearch_plugin_aws_ec2_ping_timeout: 5s
 elasticsearch_plugin_marvel_version: 1.2.1
-elasticsearch_plugin_marvel_agent_enabled: "true"

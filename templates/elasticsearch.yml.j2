@@ -548,3 +548,10 @@ action.disable_delete_all_indices: {{ elasticsearch_misc_disable_delete_all_indi
 {% if elasticsearch_script_disable_dynamic is defined %}
 script.disable_dynamic: {{ elasticsearch_script_disable_dynamic }}
 {% endif %}
+
+############################# Custom ###################################
+plugin.mandatory: cloud-aws
+cluster.routing.allocation.allow_rebalance: always
+cluster.routing.allocation.cluster_concurrent_rebalance: 20
+indices.fielddata.cache.size: 60%
+http.compression: true
