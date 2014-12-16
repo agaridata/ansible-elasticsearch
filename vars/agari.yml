@@ -1,5 +1,4 @@
 ---
-# Elasticsearch Ansible Sample Variables
 
 elasticsearch_version: 1.4.1
 elasticsearch_heap_size: 8g
@@ -15,8 +14,7 @@ elasticsearch_index_mapper_dynamic: "true"
 elasticsearch_memory_bootstrap_mlockall: "true"
 elasticsearch_network_http_port: 9200
 elasticsearch_network_http_enabled: "true"
-elasticsearch_gateway_expected_nodes: 6
-elasticsearch_discovery_zen_minimum_master_nodes: 1
+elasticsearch_discovery_zen_minimum_master_nodes: 2
 elasticsearch_discovery_zen_ping_timeout: 5s
 elasticsearch_discovery_zen_ping_multicast_enabled: "false"
 elasticsearch_misc_auto_create_index: "true"
@@ -26,4 +24,3 @@ elasticsearch_plugin_aws_region: "us-west-2"
 elasticsearch_plugin_aws_version: 2.4.1
 elasticsearch_plugin_aws_ec2_ping_timeout: 5s
 elasticsearch_plugin_marvel_version: 1.2.1
-elasticsearch_index_number_of_replicas: 2

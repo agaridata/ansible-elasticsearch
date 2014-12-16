@@ -11,4 +11,3 @@
 
   tasks:
     - include: tasks/main.yml
-    - include: tasks/aws.yml
