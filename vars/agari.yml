@@ -14,9 +14,10 @@ elasticsearch_index_mapper_dynamic: "true"
 elasticsearch_memory_bootstrap_mlockall: "true"
 elasticsearch_network_http_port: 9200
 elasticsearch_network_http_enabled: "true"
-elasticsearch_discovery_zen_minimum_master_nodes: 4
+elasticsearch_discovery_zen_minimum_master_nodes: 2
 elasticsearch_discovery_zen_ping_timeout: 5s
 elasticsearch_discovery_zen_ping_multicast_enabled: "false"
+elasticsearch_discovery_zen_ping_unicast_hosts: ["search-06.qa.agari.com", "search-07.qa.agari.com", "search-08.qa.agari.com", "search-09.qa.agari.com", "search-10.qa.agari.com", "search-11.qa.agari.com", "search-12.qa.agari.com"]
 elasticsearch_misc_auto_create_index: ".marvel-*"
 elasticsearch_misc_disable_delete_all_indices: "true"
 elasticsearch_plugin_aws_ec2_groups: elasticsearch
