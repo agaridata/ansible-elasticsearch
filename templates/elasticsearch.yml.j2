@@ -159,6 +159,10 @@ index.mapper_dynamic: {{ elasticsearch_index_mapper_dynamic }}
 index.query.bool.max_clause_count: {{ elasticsearch_misc_query_bool_max_clause_count }}
 {% endif %}
 
+{% if elasticsearch_index_refresh_interval is defined %}
+index.refresh_interval: {{ elasticsearch_index_refresh_interval }}
+{% endif %}
+
 #################################### Paths ####################################
 
 # Path to directory containing configuration (this file and logging.yml):

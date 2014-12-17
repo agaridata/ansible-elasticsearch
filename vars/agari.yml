@@ -1,6 +1,6 @@
 ---
 
-elasticsearch_version: 1.4.1
+elasticsearch_version: 1.4.2
 elasticsearch_heap_size: 8g
 elasticsearch_max_open_files: 131080
 elasticsearch_max_locked_memory: unlimited
@@ -24,5 +24,6 @@ elasticsearch_plugin_aws_ec2_groups: elasticsearch
 elasticsearch_plugin_aws_region: "us-west-2"
 elasticsearch_plugin_aws_version: 2.4.1
 elasticsearch_plugin_aws_ec2_ping_timeout: 5s
-elasticsearch_plugin_marvel_version: 1.2.1
+elasticsearch_plugin_marvel_version: 1.3.0
 elasticsearch_index_number_of_replicas: 2
+elasticsearch_index_refresh_interval: 10s
