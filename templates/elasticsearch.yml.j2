@@ -557,5 +557,6 @@ script.disable_dynamic: {{ elasticsearch_script_disable_dynamic }}
 cluster.routing.allocation.allow_rebalance: always
 cluster.routing.allocation.cluster_concurrent_rebalance: 20
 indices.fielddata.cache.size: 60%
+indices.breaker.request.limit: 60%
 http.compression: true
 index.store.throttle.type: none
