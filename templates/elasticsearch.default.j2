@@ -57,8 +57,7 @@ ES_JAVA_OPTS="{{ elasticsearch_java_opts }}"
 {% endif %}
 
 # Environment Vars
-#{% if elasticsearch_env_use_gc_logging is defined %}
-# Turn on GC loggin by DEFAULT
+{% if elasticsearch_env_use_gc_logging is defined %}
 export ES_USE_GC_LOGGING=true
-#{% endif %}
+{% endif %}
 
