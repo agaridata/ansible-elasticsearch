@@ -1,7 +1,6 @@
 ---
 # Elasticsearch Ansible Playbook
 - hosts: all
-  user: gortiz
   sudo: yes
 
   vars_files:
