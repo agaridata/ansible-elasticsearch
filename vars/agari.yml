@@ -1,6 +1,6 @@
 ---
 
-elasticsearch_version: 1.4.2
+elasticsearch_version: 1.5.2
 elasticsearch_heap_size: 8g
 elasticsearch_max_open_files: 131080
 elasticsearch_max_locked_memory: unlimited
