@@ -20,9 +20,9 @@ elasticsearch_misc_auto_create_index: ".marvel-*"
 elasticsearch_misc_disable_delete_all_indices: "true"
 elasticsearch_plugin_aws_ec2_groups: newelasticsearch
 elasticsearch_plugin_aws_region: "us-west-2"
-elasticsearch_plugin_aws_version: 2.4.1
+elasticsearch_plugin_aws_version: 2.5.0
 elasticsearch_plugin_aws_ec2_ping_timeout: 5s
-elasticsearch_plugin_marvel_version: 1.3.0
+elasticsearch_plugin_marvel_version: 1.3.1
 elasticsearch_index_number_of_replicas: 1
 elasticsearch_index_refresh_interval: 10s
 elasticsearch_env_use_gc_logging: "true"
